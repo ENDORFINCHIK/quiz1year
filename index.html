@@ -1,11 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Love Quiz</title>
+<style>
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:linear-gradient(180deg,#ffe6f0,#fff);
+  display:flex;
+  justify-content:center;
+}
+.container{
+  width:100%;
+  max-width:420px;
+  min-height:100vh;
+  padding:20px;
+  box-sizing:border-box;
+  position:relative;
+}
+
+h1{
+  text-align:center;
+  color:#ff3b7a;
+}
+
+.quiz-card{
+  background:white;
+  border-radius:20px;
+  padding:20px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+  margin-top:20px;
+}
+
+.question{
+  font-size:18px;
+  margin-bottom:15px;
+}
+
+.option{
+  display:block;
+  width:100%;
+  padding:12px;
+  margin:8px 0;
+  border:none;
+  border-radius:12px;
+  background:#ffe6f0;
+  font-size:16px;
+  cursor:pointer;
+  transition:0.2s;
+}
+
+.option:hover{
+  background:#ffd1e6;
+}
+
+.next{
+  margin-top:15px;
+  width:100%;
+  padding:12px;
+  border:none;
+  border-radius:12px;
+  background:#ff3b7a;
+  color:white;
+  font-size:16px;
+}
+
+.heart{
+  position:absolute;
+  font-size:24px;
+  opacity:0.4;
+  animation:float 6s infinite ease-in-out;
+}
+
+@keyframes float{
+  0%{transform:translateY(0)}
+  50%{transform:translateY(-20px)}
+  100%{transform:translateY(0)}
+}
+
+.heart1{top:40px;left:10px}
+.heart2{top:120px;right:20px}
+.heart3{bottom:120px;left:30px}
+.heart4{bottom:40px;right:15px}
+
+</style>
 </head>
 <body>
-    <a href="quiz1.html">Go to Quiz 1</a>
+
+<div class="container">
+
+<div class="heart heart1">💗</div>
+<div class="heart heart2">💖</div>
+<div class="heart heart3">💕</div>
+<div class="heart heart4">💘</div>
+
+<h1>Love Quiz ❤️</h1>
+
+<div class="quiz-card">
+<div class="question" id="question">Який твій ідеальний вечір?</div>
+
+<button class="option">Дивитись фільм</button>
+<button class="option">Прогулянка</button>
+<button class="option">Романтична вечеря</button>
+<button class="option">Грати в ігри</button>
+
+<button class="next">Далі</button>
+</div>
+
+</div>
+
 </body>
 </html>

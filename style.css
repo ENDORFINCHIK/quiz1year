@@ -1,0 +1,78 @@
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:linear-gradient(180deg,#ffe6f0,#fff);
+  display:flex;
+  justify-content:center;
+}
+.container{
+  width:100%;
+  max-width:420px;
+  min-height:100vh;
+  padding:20px;
+  box-sizing:border-box;
+  position:relative;
+}
+
+h1{
+  text-align:center;
+  color:#ff3b7a;
+}
+.message{
+  margin-top:10px;
+  font-size:16px;
+  line-height:1.5;
+  max-width: 420px;
+  text-align: center;
+}
+.quiz-card{
+  background:white;
+  border-radius:20px;
+  padding:20px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+  margin-top:20px;
+}
+
+.question{
+  font-size:18px;
+  margin-bottom:15px;
+}
+
+.option{
+  display:block;
+  width:100%;
+  padding:12px;
+  margin:8px 0;
+  border:none;
+  border-radius:12px;
+  background:#ffe6f0;
+  font-size:16px;
+  cursor:pointer;
+  transition:0.2s;
+}
+
+.option:hover{
+  background:#ffd1e6;
+}
+
+.next{
+  margin-top:15px;
+  width:100%;
+  padding:12px;
+  border:none;
+  border-radius:12px;
+  background:#ff3b7a;
+  color:white;
+  font-size:16px;
+}
+
+.heart{
+  position:absolute;
+  font-size:24px;
+  opacity:0.4;
+  animation:float 6s infinite ease-in-out;
+}
+.heart1{top:40px;left:10px}
+.heart2{top:120px;right:20px}
+.heart3{bottom:120px;left:30px}
+.heart4{bottom:40px;right:15px}

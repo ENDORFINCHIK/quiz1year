@@ -17,12 +17,12 @@
 
 <div class="quiz-card">
 
-<div class="question">Коли ми познайомились?</div>
+<div class="question">Коли ми вперше зустрілись?</div>
 
-<button class="option">20 лютого</button>
-<button class="option">19 лютого</button>
-<button class="option">22 лютого</button>
-<button class="option">23 лютого</button>
+<button class="option">16 травня</button>
+<button class="option">13 травня</button>
+<button class="option">22 травня</button>
+<button class="option">23 травня</button>
 
 <p id="result"></p>
 
@@ -46,11 +46,11 @@ options.forEach((button, index) => {
 
         if(index === 0){
             button.style.backgroundColor="green";
-            result.textContent="Правильно ❤️ Шукай в коридорі)";
+            result.textContent="Правильно ❤️ Шукай в кімнаті, там де ще немає речей)";
         } 
         else{
             button.style.backgroundColor="red";
-            result.textContent="Неправильно 😢 Шукай в коридорі)";
+            result.textContent="Неправильно 😢";
         }
 
     });
